@@ -98,6 +98,8 @@
 \def\guide#1{\gdef\@guide{#1}}
 \def\guidedesignation#1{\gdef\@guidedesignation{#1}}
 \def\guidedept#1{\gdef\@guidedept{#1}}
+\def\team#1{\gdef\@team{#1}}
+\def\teamNum#1{\gdef\@teamNum{#1}}
 %\def\acadyear#1{\gdef\@acadyear{#1}}
 %\RequirePackage[dvips]{graphicx}
 
@@ -131,7 +133,7 @@
             {\normalsize \em submitted by \par}
          \fi
          \vskip 5ex%
-         {\bf \large\MakeUppercase{\@author\@roll}\par\par}
+         {\bf \large\MakeUppercase{\@author\@teamNum}\par\par}
          \vskip 5ex%
          {\em for the award of the degree }\par
          \vskip 5ex%
@@ -157,7 +159,7 @@
            \vskip 5ex%
            {\normalsize \em submitted by \par}
            \vskip 5ex%
-           {\bf \large\MakeUppercase{\@author\hspace{2mm}(\@roll)}\par\par}
+           {\bf \large\MakeUppercase{\@author\hspace{2mm}(\@teamNum)}\par\par}
            \vskip 5ex%
            {\normalsize \em in partial fulfilment of requirements\par
              for the award of the \if@DD
@@ -215,21 +217,21 @@
 	\thispagestyle{empty}
 	\typeout{Certificate}
 
-\noindent I, \textbf{\@author}, with Roll No: \textbf{\@roll} hereby declare that the material presented in the Project Report titled \textbf{\@title} represents original work carried out by me in the \textbf{Department of \@department} at the Indian Institute of Information Technology, Design and Manufacturing, Kancheepuram.\\
+\noindent We, \textbf{\@team}, with Team No: \textbf{\@teamNum} hereby declare that the material presented in the Project Report titled \textbf{\@title} represents original work carried out by us in the \textbf{Department of SIDI} at the Indian Institute of Information Technology, Design and Manufacturing, Kancheepuram.\\
 \noindent 
-With my signature, I certify that:
+With my signature, We certify that:
 \begin{singlespace}
 	\begin{itemize}
-	\item I have not manipulated any of the data or results.\\
-	\item I have not committed any plagiarism of intellectual
+	\item We have not manipulated any of the data or results.\\
+	\item We have not committed any plagiarism of intellectual
 	property.
-	I have clearly indicated and referenced the contributions of
+	We have clearly indicated and referenced the contributions of
 	others.\\
-	\item I have explicitly acknowledged all collaborative research
+	\item We have explicitly acknowledged all collaborative research
 	and discussions.\\
-	\item I have understood that any false claim will result in severe
+	\item We have understood that any false claim will result in severe
 	disciplinary action.\\
-	\item I have understood that the work may be screened for any form
+	\item We have understood that the work may be screened for any form
 	of academic {misconduct}.
 	\end{itemize}
 \end{singlespace}
@@ -258,7 +260,7 @@ With my signature, I certify that:
      \vskip 25pt
      \thispagestyle{empty}
      \typeout{Certificate}
-     This is to certify that the report titled {\bf\@title}, submitted by {\bf\@author \hspace{1 mm}(\@roll)}, to the Indian Institute of Information Technology, Design and Manufacturing Kancheepuram, for the award of the \if@DD
+     This is to certify that the report titled {\bf\@title}, submitted by {\bf\@team\hspace{1 mm}(\@teamNum)}, to the Indian Institute of Information Technology, Design and Manufacturing Kancheepuram, for the award of the \if@DD
      dual
      \fi degree of 
      \if@MTech

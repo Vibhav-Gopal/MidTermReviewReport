@@ -178,3 +178,17 @@ TSWLatexianTemp*
 
 # KBibTeX
 *~[0-9]*
+
+*.pdf
+*.aux
+*.blg
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+
+*.c
+*.py
+*.exe
+
