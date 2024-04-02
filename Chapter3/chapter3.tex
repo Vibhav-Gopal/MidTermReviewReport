@@ -1,12 +1,44 @@
-\chapter{TITLE OF CHAPTER3}
+\chapter{Chapter 3}
 \graphicspath{{Chapter3/}}
 
-\section{Section 1}
-\subsection{Subsection heading}
-Type content here
-\section{Section 2}
-Type content here
+\section{Proposed Solution}
+We propose a solution which
 \begin{itemize}
-	\item 
+	\item Monitors the flow of water through it
+	\item Monitors the quality of water flowing through it
+	\item Is easy to install and cheap
+	\item Can be used in conjunction with multiple clones of it self and establish a networks
+	\item Has a user friendly interface
 \end{itemize}
+A network of sensors installed throughout the water distribution system can be used to track various parameters, including flow rates, and water quality. Continuous data can be obtained from these sensors to identify anomalies and contamination.
+\section{Methodology}
+Our solution uses 
+\begin{itemize}
+	\item ESP8266 Microcontroller
+	\item SIM800L GSM Module
+	\item YF-S201 Water flow meter
+	\item TS-300B Water turbidity sensor
+	\item LEDs
+\end{itemize}
+The product will be attached to the end of an outlet, the product measures the water quality using the turbidity sensor as it flows past it, while also measuring the flow of water through it using the Flow meter. The ESP8266 Microcontroller is the brains of the operation, the microcontroller has a Bluetooth and WiFi interface, it will keep track of the water flow rate and total usage statistics, whenever the usage pattern predicts to cross the set threshold before the end of the day, the LEDs glow as a warning and an SMS Alert is sent to the user. We are also looking into the possibility of utilising the WiFi capabilities of the ESP8266 to host a webserver and provide a web user interface for the end consumer. \\
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics*[scale=0.4]{Smart Water Meter.png}
+	\caption{Block Diagram}
+	
+	\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics*[scale=0.8]{eoijf.png}
+	\caption{Schematic}
+	
+	\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics*[scale=0.8]{wireframe.jpg}
+	\caption{Wireframe model of proposed solution}
+	
+	\end{figure}
 

@@ -37,7 +37,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Load the correct class.
-\if@Synopsis
+\if@Synopsis    
     \LoadClass[12pt,a4paper]{article}
 \else
     \LoadClass[12pt,a4paper]{report}
